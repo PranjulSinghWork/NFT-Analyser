@@ -1,8 +1,6 @@
 module com.example.assignment2gc200489832 {
     requires javafx.controls;
     requires javafx.fxml;
-
-
-    opens com.example.assignment2gc200489832 to javafx.fxml;
+    requires java.net.http;
     exports com.example.assignment2gc200489832;
 }
