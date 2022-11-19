@@ -12,15 +12,14 @@ public class APIUtility {
 
 
     public static void getNFTFromDB(String searchNFT) throws IOException, InterruptedException {
-        String uri = "https://api.opensea.io/api/v1/assets?format=json";
 
-        /**
-         * configuring the environment to make an HTTp request
-         */
         HttpClient client = HttpClient.newHttpClient();
-        HttpRequest httpRequest = HttpRequest.newBuilder().uri(URI.create(uri)).build();
-        HttpResponse<Path> saveFile = client.send(httpRequest, HttpResponse
-                .BodyHandlers
-                .ofFile(Paths.get("nft.json")));
+        HttpRequest request = HttpRequest.newBuilder()
+                .uri(URI.create("https://opensea13.p.rapidapi.com/assets?collection_slug=cryptopunks&order_direction=desc&limit=20&include_orders=false"))
+                .header("X-RapidAPI-Key", "1d42b1040dmshc5cabe163cf0580p10aaadjsnb659d25ef11d")
+                .header("X-RapidAPI-Host", "opensea13.p.rapidapi.com")
+                .method("GET", HttpRequest.BodyPublishers.noBody())
+                .build();
+        HttpResponse<Path> response = client.send(request, HttpResponse.BodyHandlers.ofFile(Paths.get("nft.json")));
     }
 }
