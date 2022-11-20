@@ -22,4 +22,10 @@ public class APIUtility {
                 .build();
         HttpResponse<Path> response = client.send(request, HttpResponse.BodyHandlers.ofFile(Paths.get("nft.json")));
     }
+    public static  APIResponse getNFTFromFile(){
+        /**
+         * Creating the GSON object.
+         */
+        Gson gson = new Gson();
+    }
 }
