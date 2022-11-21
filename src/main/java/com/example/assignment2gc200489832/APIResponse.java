@@ -6,4 +6,7 @@ public class APIResponse {
 
     public NFT[] assets;
 
+    public NFT[] getAssets() {
+        return assets;
+    }
 }

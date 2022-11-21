@@ -8,4 +8,8 @@ public class NFT {
     public String image;
     public String description;
 
+    public String toString(){
+        return String.format("%s", name);
+    }
+
 }
