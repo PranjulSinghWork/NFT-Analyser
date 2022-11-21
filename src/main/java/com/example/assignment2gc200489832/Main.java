@@ -18,7 +18,8 @@ public class Main extends Application {
     }
 
     public static void main(String[] args) throws IOException, InterruptedException {
-        APIUtility.getNFTFromDB("WOM #466");
+        //APIUtility.getNFTFromDB("WOM #466");
+        APIResponse apiResponse = APIUtility.getNFTFromFile();
         launch();
     }
 }

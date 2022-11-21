@@ -1,5 +1,8 @@
 package com.example.assignment2gc200489832;
 
+import com.google.gson.Gson;
+import com.google.gson.stream.JsonReader;
+import java.io.FileReader;
 import java.io.IOException;
 import java.net.URI;
 import java.net.http.HttpClient;
@@ -27,5 +30,19 @@ public class APIUtility {
          * Creating the GSON object.
          */
         Gson gson = new Gson();
+        APIResponse apiResponse = null;
+        try(
+                FileReader fileReader = new FileReader("nft.json");
+                        JsonReader jsonReader = new JsonReader(fileReader);
+
+                        )
+        {
+            apiResponse = gson.fromJson(jsonReader, APIResponse.class);
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+        return  apiResponse;
     }
+
+
 }
