@@ -1,5 +1,6 @@
 .root{
     -fx-background-color: linear-gradient(from 400px 400px to 800px 800px, #212121,#757575);
+    -fx-background-image: url("images/background.png");
 }
 
 .label{
@@ -13,3 +14,6 @@
 .list-view{
     -fx-background-radius: 15px;
 }
+
+
+
