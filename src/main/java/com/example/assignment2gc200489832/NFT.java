@@ -17,5 +17,6 @@ public class NFT {
     }
 
     public Trait[] traits;
+    public NFTContract assetContract;
 
 }
