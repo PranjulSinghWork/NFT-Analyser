@@ -11,4 +11,20 @@ public class NFTContract {
     public String image;
 
     public String name;
+
+    public String getDateCreated() {
+        return dateCreated;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public String getImage() {
+        return image;
+    }
+
+    public String getName() {
+        return name;
+    }
 }

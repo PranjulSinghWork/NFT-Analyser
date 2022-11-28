@@ -32,7 +32,7 @@
                   <ButtonBar>
                      <buttons>
                         <ImageView fx:id="nftImageArt" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
-                        <Button fx:id="detailsBtn" alignment="CENTER" mnemonicParsing="false" prefHeight="25.0" text="More Details!" />
+                        <Button fx:id="detailsBtn" alignment="CENTER" mnemonicParsing="false" onAction="#getNFT" prefHeight="25.0" text="More Details!" />
                      </buttons>
                      <HBox.margin>
                         <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
