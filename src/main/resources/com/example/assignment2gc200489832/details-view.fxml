@@ -13,7 +13,7 @@
       <Label fx:id="nameLabel" layoutX="393.0" layoutY="87.0" text="Label" />
       <Label fx:id="dateCreatedLabel" layoutX="333.0" layoutY="152.0" text="Label" />
       <ImageView fx:id="posterImageView" fitHeight="232.0" fitWidth="200.0" layoutX="573.0" layoutY="219.0" pickOnBounds="true" preserveRatio="true" />
-      <Label layoutX="287.0" layoutY="21.0" text="CryptoPunk" />
+      <Label id="header" layoutX="280.0" prefHeight="97.0" prefWidth="233.0" text="CryptoPunk" />
       <Label id="descriptionLabel" fx:id="descriptionLabel" layoutX="32.0" layoutY="253.0" prefHeight="225.0" prefWidth="500.0" text="description">
          <font>
             <Font size="11.0" />

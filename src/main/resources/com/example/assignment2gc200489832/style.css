@@ -17,5 +17,20 @@
 #descriptionLabel{
     -fx-font-size: 18px;
 }
+.list-cell:filled:selected:focused, .list-cell:filled:selected {
+    /* 3:, 4: */
+    -fx-background-color: linear-gradient(#e66465, #9198e5);
+    -fx-text-fill: white; /* 5 */
+}
+.image-view-wrapper {
+    -fx-border-color: linear-gradient(#e66465, #9198e5);
+    -fx-border-style: solid;
+    -fx-border-width: 5;
+}
+
+#header{
+    -fx-font-family: "Agency FB";
+    -fx-font-size: 60px;
+}
 
 
