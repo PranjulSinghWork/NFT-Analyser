@@ -30,8 +30,8 @@ public class NFTViewController implements Initializable {
         SceneChanger.changeScenes(event, "details-view.fxml",
                 nftSelected.assetContract.getName(),
                 nftSelected.assetContract.getDescription(),
-//                nftSelected.assetContract.getImage(),
-                nftSelected.assetContract.getDateCreated());
+                nftSelected.assetContract.getDateCreated(),
+                nftSelected.getImage());
 
     }
 

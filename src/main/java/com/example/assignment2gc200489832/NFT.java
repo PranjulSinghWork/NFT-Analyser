@@ -6,7 +6,7 @@ public class NFT {
     public String name;
     @SerializedName("image_url")
     public String image;
-    public String description;
+
 
     @SerializedName("token_id")
     public String tokenID;
