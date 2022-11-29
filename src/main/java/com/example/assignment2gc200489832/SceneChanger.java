@@ -10,7 +10,7 @@ import javafx.stage.Stage;
 import java.io.IOException;
 
 public class SceneChanger {
-    public static void changeScenes(ActionEvent event, String fxmlFileName,String name,  String description,String dateCreated, String image) throws IOException {
+    public static void changeScenes(ActionEvent event, String fxmlFileName,String name,  String description,String dateCreated, String image, String title) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource(fxmlFileName));
         Scene scene = new Scene(fxmlLoader.load());
         DetailsViewController controller = fxmlLoader.getController();
@@ -18,6 +18,7 @@ public class SceneChanger {
 
         //This code has derived from the in class code by the professor.
         Stage stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        stage.setTitle(title);
         stage.setScene(scene);
         stage.show();
     }

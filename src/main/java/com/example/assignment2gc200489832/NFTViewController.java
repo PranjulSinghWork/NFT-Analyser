@@ -31,7 +31,7 @@ public class NFTViewController implements Initializable {
                 nftSelected.assetContract.getName(),
                 nftSelected.assetContract.getDescription(),
                 nftSelected.assetContract.getDateCreated(),
-                nftSelected.getImage());
+                nftSelected.getImage(),"CryptoPunk Info");
 
     }
 
